@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea580c",
+                        "background-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "serif": ["Libre Baskerville", "serif"],
+                        "display": ["Libre Baskerville", "serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, .serif {
+            font-family: 'Libre Baskerville', serif;
+        }
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 4.5rem;
+            line-height: 1;
+            font-weight: 700;
+            padding-right: 12px;
+            color: #ea580c;
+            font-family: 'Libre Baskerville', serif;
+            margin-top: 4px;
+        }
+        .category-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ea580c;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- BEGIN: MainHeader -->
+<header class="border-b border-gray-100 py-8 bg-white">
+<div class="max-w-[1200px] mx-auto px-4 text-center">
+<h1 class="text-5xl font-bold tracking-tighter mb-8 serif">HARVEN</h1>
+<nav class="flex justify-center items-center space-x-8 text-xs font-bold uppercase tracking-widest border-t border-b border-gray-100 py-4">
+<a class="hover:text-[#ea580c] transition-colors" href="index.html">Beranda</a>
+<a class="hover:text-[#ea580c] transition-colors" href="news.html">News</a>
+<a class="hover:text-[#ea580c] transition-colors" href="learn.html">Learn</a>
+<a class="hover:text-[#ea580c] transition-colors" href="people.html">People</a>
+<a class="hover:text-[#ea580c] transition-colors" href="about.html">About Me</a>
+</nav>
+</div>
+</header>
+<!-- END: MainHeader -->
+<main class="flex-1 max-w-6xl mx-auto w-full px-6 md:px-20 py-12 md:py-16">
+<!-- Hero Section: Portrait & Title -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center mb-16">
+<div class="lg:col-span-5">
+<div class="relative aspect-[3/4] overflow-hidden rounded-xl shadow-xl">
+<img alt="Elegant professional portrait" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqkCghDKKi6rHdlu6VNVfOEozeyXFTGeDG6TQu-TzDQYD1-fyIAXEQSTuI84o4nBHCv9UavxbaJIc8HJf9jrvcENHFOQbeuGT0jm6KbwB_Unkg7F330CyS5ELcf3zb-4BCItsZzsjuB-MTiprBG21sO3tqf1SYc6jugAkwg1eGbGKop6cbI7J_TefJq0G0s0KMColiWK-8t05NzMqvntcZ6sqHaw4NATRrql2a2Dpl4KPZlBTrzkL-lssD-QS3p-L6gH7zciGsGDMJ"/>
+</div>
+</div>
+<div class="lg:col-span-7 flex flex-col justify-center">
+<span class="inline-block w-fit px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold tracking-[0.2em] uppercase mb-4 rounded">Wawancara Eksklusif</span>
+<h1 class="text-gray-900 text-5xl md:text-6xl xl:text-7xl font-bold leading-[1.05] tracking-tighter mb-8 serif">Anneliese <br/>van der Meer</h1>
+<div class="flex flex-col gap-1 border-l-4 border-primary pl-6">
+<p class="text-lg md:text-xl font-semibold text-gray-800">Direktur Mauritshuis</p>
+<p class="text-slate-500 uppercase text-[10px] tracking-[0.2em] font-bold">WAKTU BACA 12 MENIT • DESEMBER 2024</p>
+</div>
+</div>
+</section>
+<!-- Article Content -->
+<article class="max-w-[720px] mx-auto">
+<div class="space-y-6 text-base md:text-lg leading-relaxed text-gray-700 text-justify">
+<p class="drop-cap">Den Haag selalu menjadi kota dengan kekuatan yang tenang dan warisan artistik yang mendalam. Berada di pucuk pimpinan salah satu institusi paling bergengsi di dunia, Anneliese van der Meer mendefinisikan ulang cara kita berinteraksi dengan mahakarya klasik di era digital. Perjalanannya dari galeri kecil di Delft hingga aula megah Mauritshuis adalah bukti dedikasinya yang teguh terhadap pelestarian budaya dan penyampaian cerita yang inovatif.</p>
+<p>Di kantor-kantor yang bermandikan sinar matahari yang menghadap ke Hofvijver, Van der Meer berbicara dengan presisi ritmis yang mencerminkan Para Maestro Belanda yang ia lindungi. Di bawah kepemimpinannya, Mauritshuis telah mengalami transformasi radikal—bukan pada arsitektur fisiknya, melainkan pada jiwanya. Ia telah menjembatani celah antara kanvas abad ke-17 dan audiens abad ke-21, memastikan bahwa "Gadis dengan Anting-Anting Mutiara" tetap relevan bagi pembuat konten TikTok seperti halnya bagi pedagang di Zaman Keemasan.</p>
+<!-- Blockquote -->
+<div class="py-10 my-12 border-y border-gray-100">
+<blockquote class="text-center px-4">
+<p class="text-2xl md:text-3xl font-bold text-gray-900 leading-tight italic serif">"Seni bukanlah saksi bisu sejarah; seni adalah denyut nadi kehidupan dari identitas kolektif kita."</p>
+<cite class="block mt-6 text-primary font-bold not-italic tracking-[0.2em] uppercase text-xs">— Anneliese van der Meer</cite>
+</blockquote>
+</div>
+<p>Tantangan kurasi modern sangatlah beragam. Van der Meer menavigasi perairan kompleks mengenai restitusi, kepemilikan digital, dan definisi "seni yang dapat diakses" yang terus berkembang. Filosofinya sederhana: seni harus memprovokasi, bukan sekadar menghias. Tahun ini saja, ia mengurasi tiga pameran terobosan yang memasangkan seniman jalanan kontemporer yang berbasis di Den Haag dengan potret klasik, memicu percakapan di seluruh kota tentang siapa yang layak untuk "diabadikan" dalam sebuah bingkai.</p>
+<p>"Kami bukan sekadar museum," jelasnya, sambil menunjuk ke arah kota yang semarak di luar jendelanya. "Kami adalah penjaga memori visual Den Haag. Namun memori harus berevolusi agar tetap hidup. Jika kita memperlakukan lukisan-lukisan ini sebagai objek statis, kita gagal. Lukisan-lukisan tersebut adalah percakapan yang menunggu untuk terjadi."</p>
+</div>
+</article>
+<!-- Recommendations Section -->
+<section class="mt-20 pt-12 border-t border-gray-100">
+<div class="flex items-center justify-between mb-8">
+<h3 class="text-xl font-bold text-gray-900 serif">Visioner Terkait</h3>
+<a class="text-primary font-bold text-[10px] uppercase tracking-widest flex items-center gap-2 hover:underline" href="#">Lihat Semua <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 lg:gap-8">
+<!-- Profile Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 bg-slate-200">
+<img alt="Potret Marcus de Jong" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIPnosmL8-J8U4Kp54ai8rZNdIwbDsFjpm1ydiO8X8M8oVEObv37lkO_DjF6l3iQgp_0PdY6Rf6kkOgzpCuvM6tVLpcx54NbREHiWhtI_Tj_MMpbccwppW43fkzXOSbDkFudvuTOWS8bQVa2i7hZ60zc1aApErD9fijlK6k1hEn_vOYzfp0VBIKRfG9G20j3Wdr6vcSBhwdttND7KzmgxTiX14E-pusLc4JftKVcGeloVsHKh01jB8gZNGfxgzrv7Uxc2tVORoYS13"/>
+</div>
+<h4 class="font-bold text-gray-900 text-sm group-hover:text-primary transition-colors serif">Marcus de Jong</h4>
+<p class="text-slate-500 text-[10px] font-bold uppercase">WAKTU BACA 12 MENIT • DESEMBER 2024</p>
+</div>
+<!-- Profile Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 bg-slate-200">
+<img alt="Potret Elena Rossi" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwAbyMuxMEzMMATToaeizZwXcg799lB9W9dPu1WawBtefKC4ZYMsugsCQYCmQUrbFCzXLTUytZwFyWkyFOAHxN8K5EiehQq_5u_jw9oSjG9IeyBFaUfjHqc_2doeTbY3C2sunX16VtNsPzmYV7tXH7SwZIEPgLJy96kVC5BmDVzTtOBWWDW4Z3LicgwNopADdF3WXlc788kfO7uGNRoZRIIbLF-pRDVs2UQQCD32o0Zd8jStkaVhZcHDnB-J0Vdq-_iNdmhLojFY0i"/>
+</div>
+<h4 class="font-bold text-gray-900 text-sm group-hover:text-primary transition-colors serif">Elena Rossi</h4>
+<p class="text-slate-500 text-[10px] font-bold uppercase">WAKTU BACA 12 MENIT • DESEMBER 2024</p>
+</div>
+<!-- Profile Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 bg-slate-200">
+<img alt="Potret Johan Vermeer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZ_RgQ0eROr8AKSTCWbjTPnUXUfa-V6pHB_jL88013zPOjXSCKEcVjp29byRFVH96GhodOq9rW_FnTwcz2unyqJAKwkYdn6ijpvhJfT-NEAEN3T_OQ421CKJcEQWHYqjH5kOnCje58EVmykfyBiKZ9SNV2X7Wi7V9_zD361Lxf7yHO9LxpQYPqpjQRh-BronyF6DGKW5mRMkluSd1YmA99cRXKxVbGm1YWN5Xcdd-ef7n8P8soVSmUZ4FfXlrKxHUqU5dGXzHdwVWr"/>
+</div>
+<h4 class="font-bold text-gray-900 text-sm group-hover:text-primary transition-colors serif">Johan Vermeer</h4>
+<p class="text-slate-500 text-[10px] font-bold uppercase">WAKTU BACA 12 MENIT • DESEMBER 2024</p>
+</div>
+<!-- Profile Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 bg-slate-200">
+<img alt="Potret Sophie Blanc" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYJa5P04waz2mM3rN6aucuneeXwBXynqxXietAkDt67aGC52PCd17XOMqQFiEhzciBQ1whpEZgOQehTcG1VQFlLjhhAhDut-hMrS9eq_LLmM2tTs2r-RQlZarh-2uuzYscKgGiw0pDv9pU9rqR3MSQi9LwVyoSMKv29YDzXrZaVJxApxr-28tFSCDKaYxJD6lPV0MLIvWmGqQ2ZPThPf9ndjXagGLA2kn_R35SdGe_Pb3muR-fwRuIjbR444r2OgE48WKPieLOjAZn"/>
+</div>
+<h4 class="font-bold text-gray-900 text-sm group-hover:text-primary transition-colors serif">Sophie Blanc</h4>
+<p class="text-slate-500 text-[10px] font-bold uppercase">WAKTU BACA 12 MENIT • DESEMBER 2024</p>
+</div>
+<!-- Profile Card 5 -->
+<div class="group cursor-pointer">
+<div class="aspect-square rounded-xl overflow-hidden mb-4 bg-slate-200">
+<img alt="Potret Bram van Dijk" class="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY5ALTtfvrAbRK_3PFs7br3-RVvjpHGANRtmV4aCmZhiRf4tsYs2bcgqrLTscQenUdZDsS5wu__Ndf7ZPXnPly0Noon7fp4NcWU3V14SR0pCw5EjLGPlX_GX4dkChF5MycIywXmCzpRpGrXlBsx2mLPSMCj5xgkd62sBR-d8Jih48fDYjmTwXlflYTZ22X4Vsy6iVzru5nWTCVB2wvYJO1YPGR_emTfTRO9sMTTcTzShMd9ta2cUZLnWSnP2BDQkvXBrp6Hs3blkm-"/>
+</div>
+<h4 class="font-bold text-gray-900 text-sm group-hover:text-primary transition-colors serif">Bram van Dijk</h4>
+<p class="text-slate-500 text-[10px] font-bold uppercase">WAKTU BACA 12 MENIT • DESEMBER 2024</p>
+</div>
+</div>
+</section>
+</main>
+<!-- BEGIN: MainFooter (Synchronized with HARVEN Home) -->
+<footer class="border-t border-gray-100 pt-16 pb-12 bg-white">
+<div class="max-w-[1200px] mx-auto px-4 text-center">
+<div class="mb-8">
+<button class="bg-gray-900 text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-black transition-colors">Berlangganan</button>
+</div>
+<div class="flex justify-center space-x-6 text-[10px] font-bold uppercase tracking-widest mb-12">
+<a class="hover:text-[#ea580c]" href="#">Tentang</a>
+<a class="hover:text-[#ea580c]" href="#">Privasi</a>
+<a class="hover:text-[#ea580c]" href="#">Bantuan</a>
+<a class="hover:text-[#ea580c]" href="#">Ketentuan</a>
+<a class="hover:text-[#ea580c]" href="#">Kontak</a>
+</div>
+<div class="text-gray-400 text-[10px] mb-12">Didukung oleh tema <a class="text-[#ea580c]" href="#">The Fox</a>.</div>
+<div class="border-t border-gray-100 pt-12">
+<h2 class="text-4xl font-bold tracking-tighter mb-6 serif">HARVEN</h2>
+<p class="text-[10px] text-gray-500 mb-8 uppercase tracking-widest">©2026 - Hak Cipta Dilindungi. Diterbitkan dengan WordPress &amp; Tema The Fox</p>
+<div class="flex justify-center space-x-4 text-sm">
+<a class="text-gray-900 hover:text-[#ea580c]" href="#"><i class="fab fa-facebook-f"></i> f</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#"><i class="fab fa-twitter"></i> x</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#"><i class="fab fa-instagram"></i> o</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#"><i class="fab fa-whatsapp"></i> w</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#"><i class="fab fa-linkedin-in"></i> in</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#"><i class="far fa-envelope"></i> e</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</div>
+</div>
+</body></html>

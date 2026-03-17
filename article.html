@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Detail Artikel - Harven Media</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300&display=swap" rel="stylesheet"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: "#ea580c", dark: "#111827" },
+                    fontFamily: { serif: ["Libre Baskerville", "serif"], sans: ["Inter", "sans-serif"] },
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #111827; }
+        h1, h2, h3, h4, .serif { font-family: 'Libre Baskerville', serif; }
+        
+        /* Drop Cap Effect for elegant reading */
+        .drop-cap::first-letter {
+            float: left;
+            font-size: 5rem;
+            line-height: 4.5rem;
+            padding-top: 0.25rem;
+            padding-right: 0.75rem;
+            font-family: 'Libre Baskerville', serif;
+            font-weight: 700;
+            color: #ea580c;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <!-- Minimal Header -->
+    <header class="border-b border-gray-100 bg-white sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-300">
+        <div class="max-w-[800px] mx-auto px-4 lg:px-0 flex items-center justify-between h-16">
+            <a href="index.html" class="text-xl font-bold tracking-tighter serif uppercase hover:text-primary transition-colors">HARVEN</a>
+            <div class="flex items-center gap-4">
+                <button class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-primary transition-colors duration-300">
+                    <span class="material-symbols-outlined text-sm">bookmark</span> Simpan
+                </button>
+                <button class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-primary transition-colors duration-300">
+                    <span class="material-symbols-outlined text-sm">share</span> Bagikan
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[800px] mx-auto px-4 lg:px-0 py-12">
+        <!-- Article Header Metadata -->
+        <header class="mb-10 text-center">
+            <a href="news.html" class="inline-block text-[10px] font-bold text-primary uppercase tracking-widest mb-4 hover:underline">Finansial & Teknologi</a>
+            <h1 class="text-4xl md:text-6xl font-bold serif leading-[1.1] tracking-tight mb-6">Masa Depan Keuangan Terdesentralisasi di Asia Tenggara</h1>
+            <p class="text-lg md:text-xl text-gray-500 font-light leading-relaxed mb-8 max-w-2xl mx-auto">Sebuah tinjauan arsitektur sistem dan dampak regulasi terhadap adopsi blockchain lintas batas di era ekonomi digital yang bergerak cepat.</p>
+            
+            <div class="flex items-center justify-center gap-4 text-xs font-semibold text-gray-500 border-t border-b border-gray-100 py-4">
+                <span class="flex items-center gap-2">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=100&auto=format&fit=crop" class="w-6 h-6 rounded-full object-cover" alt="Avatar"/>
+                    Arya Suhendra
+                </span>
+                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                <span>24 Oktober 2023</span>
+                <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+                <span>Baca 8 Menit</span>
+            </div>
+        </header>
+
+        <!-- Featured Image -->
+        <figure class="mb-12">
+            <div class="overflow-hidden rounded-xl bg-gray-100 shadow-sm">
+                <img src="https://images.unsplash.com/photo-1642104704074-907c0698cbd9?q=80&w=1600&auto=format&fit=crop" alt="Decentralized Finance Graphic" class="w-full h-[400px] md:h-[500px] object-cover hover:scale-[1.02] transition-transform duration-700 ease-out will-change-transform"/>
+            </div>
+            <figcaption class="text-[10px] text-gray-400 font-semibold uppercase tracking-widest mt-3 text-center">Ilustrasi node jaringan terdesentralisasi (Foto: Harven Studio)</figcaption>
+        </figure>
+
+        <!-- Article Body -->
+        <article class="prose prose-lg prose-gray max-w-none text-gray-800 leading-[1.8]">
+            <p class="drop-cap text-lg">Dalam dunia yang semakin terhubung, batasan geografis untuk transaksi finansial mulai memudar. Keuangan Terdesentralisasi (DeFi) bukan lagi sekadar eksperimen teknologi di pinggiran internet, melainkan sedang diintegrasikan ke dalam infrastruktur perbankan inti. Di Asia Tenggara, perubahan ini terjadi dengan kecepatan yang belum pernah terlihat sebelumnya, didorong oleh populasi *unbanked* yang besar dan penetrasi ponsel pintar yang masif.</p>
+            
+            <p class="text-lg mt-6">Analis pasar memprediksi bahwa dalam lima tahun ke depan, likuiditas lintas rantai (*cross-chain liquidity*) akan menjadi standar baru. Institusi finansial tradisional yang gagal mengadopsi protokol terbuka (*open protocols*) berisiko tertinggal oleh perusahaan *fintech* yang lebih gesit yang beroperasi dengan *overhead* nyaris nol berkat kontrak pintar (*smart contracts*).</p>
+
+            <blockquote class="my-10 pl-6 border-l-4 border-primary bg-gray-50/50 py-4 pr-4 rounded-r-lg">
+                <p class="text-2xl font-bold serif text-dark leading-snug italic m-0">"Inovasi sejati di era DeFi bukanlah tentang menciptakan uang baru, tetapi tentang merestrukturisasi arsitektur kepercayaan."</p>
+            </blockquote>
+
+            <h3 class="text-2xl font-bold serif text-dark mt-10 mb-4">Paradigma Keamanan Baru</h3>
+            <p class="text-lg">Tentu saja, skalabilitas dan keamanan tetap menjadi perhatian utama. Insiden peretasan yang menargetkan *bridge* (jembatan antar jaringan) telah merugikan miliaran dolar tahun lalu. Namun, pengembangan sistem kriptografi *Zero-Knowledge Proofs* (ZKP) menawarkan solusi elegan: memvalidasi transaksi secara matematis tanpa mengungkapkan data yang mendasarinya.</p>
+            
+            <p class="text-lg mt-6">Pendekatan ini menjanjikan tingkat privasi tingkat institusional sambil tetap menjaga auditabilitas publik yang menjadi ciri khas blockchain terbuka. Ekosistem sedang mendewasa, dan regulasi perlahan mulai mengejar teknologi, bukan untuk mencekiknya, melainkan untuk memberikan pagar pembatas yang jelas.</p>
+        </article>
+
+        <!-- Article Footer / Tags -->
+        <div class="mt-12 pt-6 border-t border-gray-100 flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-gray-200 cursor-pointer transition-colors">Blockchain</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-gray-200 cursor-pointer transition-colors">Ekonomi Makro</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-gray-200 cursor-pointer transition-colors">Asia Tenggara</span>
+        </div>
+    </main>
+
+    <!-- Footer Simple -->
+    <footer class="border-t border-gray-100 py-10 mt-10">
+        <div class="max-w-[800px] mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold tracking-tighter mb-4 serif uppercase">HARVEN</h2>
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest">© 2024 HARVEN MEDIA. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+</body>
+</html>

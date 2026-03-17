@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harven - Berita &amp; Majalah</title>
+<!-- Tailwind CSS v3 CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts - Serif for titles, Sans-serif for body -->
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<style data-purpose="typography">
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, h4, h5, .serif {
+            font-family: 'Libre+Baskerville', serif;
+        }
+        .category-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ea580c; /* Soft Orange */
+        }
+    </style>
+<style data-purpose="layout-adjustments">
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased">
+<!-- BEGIN: MainHeader -->
+<header class="border-b border-gray-100 py-6 sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-300">
+<div class="container-custom text-center">
+<h1 class="text-6xl font-bold tracking-tighter mb-10 serif">HARVEN</h1>
+<nav class="flex justify-center items-center space-x-10 text-xs font-bold uppercase tracking-widest py-2">
+<a class="hover:text-[#ea580c] transition-colors" href="index.html">Beranda</a>
+<a class="hover:text-[#ea580c] transition-colors" href="news.html">News</a>
+<a class="hover:text-[#ea580c] transition-colors" href="learn.html">Learn</a>
+<a class="hover:text-[#ea580c] transition-colors" href="people.html">People</a>
+<a class="hover:text-[#ea580c] transition-colors" href="about.html">About Me</a>
+</nav>
+</div>
+</header>
+<!-- END: MainHeader -->
+<!-- BEGIN: HeroSection -->
+<main class="container-custom mt-12">
+<div class="grid grid-cols-12 gap-8">
+<!-- Left Column -->
+<div class="col-span-3 space-y-12">
+<article class="group cursor-pointer" data-purpose="side-article" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img alt="Hero Half Post" class="w-full h-48 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQpouxwjzQX5yRQeeHIfT8couh83QKlXKfKgvx9rgXvsLAZbSZs4ZZ5gOw37fyWCYenEQVikgSu07TMUibk2dxhP43p2VdUY831OGRQRQEUlSMRacmqK38S0oPePUINjOgEp2CisE6xpykjNaFxQ5qT7OxXx99IE4yziF9Wfdh3CzKBSPB3MhjNTvlnAg4IoDxzUTEKxIkO2g-9RT8ojkohhP8j-gLxj_NmsTn7cCxLtMtQBqHQXZjQdVzZ-3CKlKqOgLvAuS-z78o"/></div></div>
+<span class="category-label">Buku</span>
+<h3 class="serif text-xl font-bold mt-2 leading-tight">Contoh Tulisan Hero-Half</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase font-bold">8 Januari 2025</p>
+</article>
+<article class="group cursor-pointer" data-purpose="side-article" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img alt="Pindah Rumah" class="w-full h-48 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJfOZdP0DNE9MnzN5zNvglStRGKNWm62X1wna_liE5CSpTVLktOzS-e_gEB6iNMqQf4yyLbeb0FWUoOGUA9L0yDQ25bmuyXHvYUApFdqcuD9yh4AwmQoaZEMhKvIMfI1G3HFK6yV2wQBjn7ehCb4CGxmJ6dY1flUbh3tLkdU7Mt22Xgr4IIXG7CVv_vEsTspJukjSQrDtdTWzrkrM_7ciTwWAfx-xVs3I8LMLzMj5bl8MEA_V5SeisopLLPOz7cWrtKWwjL7yjkYJG"/></div></div>
+<div class="space-x-2">
+<span class="category-label">Buku</span>
+</div>
+<h3 class="serif text-xl font-bold mt-2 leading-tight">Saya memutuskan untuk pindah rumah</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase font-bold">8 Januari 2025</p>
+</article>
+</div>
+<!-- Center Main Feature -->
+<div class="col-span-6 text-center">
+<article class="group cursor-pointer" data-purpose="main-feature" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-6"><div class="overflow-hidden rounded-lg"><img alt="Fitur Utama" class="w-full h-[500px] object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi_FMD3TXmXNJcpiANhJaeC0rUP0A6w05Cz9uKOaGDXp-aJz4sZhKnw3UZO4YlE2QFLmUtTuxcslyysFMLlhpsuvKwTK_O7IRJyAofP322B9is6003u0u2BaUzLKEtC055i0dUBYhuM-HDaUgYdBMmr3tdPbqEgk577sHX1tLjQdkWiwpExG2drkAlkTDwiET-kgJztSud6TDjURv6n1sJXqaRGBU2fJoPWAX0feQeuVg0mA2VZWTMJ-_FkrUe9yhrz5usCiiGEBQF"/></div></div>
+<span class="category-label">Opini</span>
+<h2 class="serif text-4xl font-bold mt-4 mb-6 leading-tight">Saat Anda mengatakan yang sebenarnya kepada mereka</h2>
+<p class="text-sm text-gray-600 leading-relaxed max-w-lg mx-auto">Pemahaman saya akan naskah ini. Merasa bebas untuk berpendapat, mari kita bahas secara mendalam. Seringkali lebih baik untuk mendengarkan para ahli di bidang ini daripada sekadar berasumsi.</p>
+<div class="mt-4 flex items-center justify-center space-x-2 text-[10px] text-gray-400 uppercase font-bold">
+<span>8 Januari 2025</span>
+<span class="w-1 h-1 bg-gray-300 rounded-full"></span>
+<span>Isabella dan Lucas</span>
+</div>
+</article>
+</div>
+<!-- Right Column: Latest Sidebar -->
+<div class="col-span-3">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-black pb-2 mb-6">Terbaru</h4>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="flex-1">
+<h5 class="serif text-sm font-bold leading-snug">Inilah rangkuman tahun 2024 saya</h5>
+<p class="text-[9px] text-gray-400 uppercase mt-1">8 Januari 2025</p>
+</div>
+<img class="w-16 h-16 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Eb7Q-moE_5CXO8NLMp_Xv9g0yNz3X63GRymg-pdlEsMMOswJ557nGEpgAJB_XKdzdjaiFRC35OGYy5nLvT1qELStgID1fjxvYMLHMS2mFJjjMAZJ0BSfj_L1sGZXI1Y2dKH4DL_Fm3H0MshRJNQ2f8Mx8lCb0Xugt3SIyMZdh0ylFf3M68MRQ0XajZzRVbiWMMzjgqDyWTzr5JiCFnPNuK0AYS7u_R9xqn2y-juAjDEaBRtO_5Is1vgS9pWq_5zbvkJ0TseEezET"/>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-1">
+<h5 class="serif text-sm font-bold leading-snug">Rebel Wilson menikahi Ramona Agruma di Sydney – dan kali ini sungguhan</h5>
+<p class="text-[9px] text-gray-400 uppercase mt-1">8 Januari 2025</p>
+</div>
+<img class="w-16 h-16 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk8Ck1AolPHLJGWu8REXCvqYYpzXYJGUx-DCCVbblhrmE0NE3tpBMD_xh5RdNIX0baxUsMMKLUN1414vdt1lUoEMscOJjca2UkA9M_8f154Z8XDSPIWvJjtLvoS8hjc_un-hKK5-WK7QQzPfQC5ZF6oYYEv29JgDfu5OjS0PTZdca5tLg38j0n0KmZJ21fpKlr9K5zVTALu6DSHGET166rvs2DApV11nMscWJwji-GIzpU0x04J4Ch6TN63Wp52oEVNoK4BRMWe3DI"/>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-1">
+<h5 class="serif text-sm font-bold leading-snug">Saat Anda mengatakan yang sebenarnya</h5>
+<p class="text-[9px] text-gray-400 uppercase mt-1">8 Januari 2025</p>
+</div>
+<img class="w-16 h-16 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD95ke-6mXaWVqsYc5BTypbhVBC5OrOnnR52snHR3ZERGLVgt8W6lSiV-Zwn_-cR4CXeQtUdAnZc0Ly_ZUOgTl4sxoOl1YUwtz8odDh0BXFixSaD7RGBoUMYkAkPdO7bRcuN-kq1lw7571GPku_FYIqvd4Ig5x4eFdd2Iq2m4RqujbzBjeAh8R7LRualxhAAh_fsA_ZQ1ECB2o9UBPEGHQTp09FDpaDp_EWiNf44LJVoGNP5NSI7CbVgtv4umDRj4T-dkW3f6c3g_Qq"/>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-1">
+<h5 class="serif text-sm font-bold leading-snug">Contoh Tulisan Hero-Half</h5>
+<p class="text-[9px] text-gray-400 uppercase mt-1">8 Januari 2025</p>
+</div>
+<img class="w-16 h-16 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAjOMWaX_QsLtp30qbGAJlW14v94yuZbTubnN4ojWTyOZK0eCaRN-LHSuNybsktPQqkUhxE014mlTK7U_xLzbn00PnUjGtHWDXFVeD0MNgBaTsAGD8yJx1Vn3fzG9uKwkbCkohL99Wda0BivJzD4sS63DUM5XBWjIHylqGD35lmnryCXBWfFIWr_JQnT0RoyyEidirdZQ-NM1wKIIcC_frWjVYOPxKaq9fm7zI2C48TmSmYEmSdbB0eSV850-dlk2FgY32LWe38AOl"/>
+</div>
+<div class="flex gap-4 items-start">
+<div class="flex-1">
+<h5 class="serif text-sm font-bold leading-snug">Selamat Datang di Tema WordPress Terbaik Untuk Penulis</h5>
+<p class="text-[9px] text-gray-400 uppercase mt-1">8 Januari 2025</p>
+</div>
+<img class="w-16 h-16 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQooU-F4H-pATbN9ZQoE8khpVdNPEUiPFZtoCsC83i41f_BrOoMJnZFhRsOBr8Lsi4SsgH1Oqe7YMdaL-_5Q1U643eFXr6thGdiUuKdi8UtXG_ovDTvCfTFk1Oz1kty_GbyxWHUq_P8ohlalTnirbwK85RZ92pa_OxQuF8nNPlZvKHkQ8roK36drvNtNnwtFzLZsP_TKszgQA4mBeL0xQVWRJp4xf3wFSQNAVByRP4lqCaVx3emNzTXR1Xd67f0YVr6iWbYJPoOEOc"/>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- END: HeroSection -->
+<!-- BEGIN: SectionGrid Business -->
+<section class="container-custom mt-20">
+<div class="flex justify-between items-end border-b border-gray-100 pb-2 mb-8">
+<h4 class="text-xs font-bold uppercase tracking-widest">Bisnis</h4>
+<a class="text-[10px] font-bold uppercase text-[#ea580c] hover:underline" href="#">Lihat semua »</a>
+</div>
+<div class="grid grid-cols-4 gap-8">
+<article class="group cursor-pointer" data-purpose="business-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEwmU2zqihso-6p5jFFgitXOiTOKWOdZ6kIgF5Af4vF3bL63mQ1BtzIADSZY6HWkTfjMzSPq9BHLYwtdRjiegezLJXXd8ubpWySut1APWhqAwjFe5Ep7RkfiRtZePpyAWs__Vq_a-v6NMhpt03jvTBDomhlLhNcAFFQJMiDlHLGQuivzUFNAw31pGtAMrwfqnHBU3HBmrWMokr9nS2KonrvKJm6y5CNzokrs7Dd1RggF2xYlvDhaZnYmAILSH--V-Jx05pZS42mf0V"/></div></div>
+<span class="category-label">Bisnis</span>
+<h3 class="serif text-lg font-bold mt-2">Saya adalah lulusan sekolah menengah atas</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Mavik Banner: fisikawan; ilmuwan. Mencari cara untuk menyadap kekuatan tersembunyi yang dimiliki semua manusia...</p>
+</article>
+<article class="group cursor-pointer" data-purpose="business-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArfmg7PlqroBwPuI3iXv9SMttVc0Qvrx-mSudINz5wQVk7_Cm6qq4TKXaNa3ifGUmvSQSp9WNCJHLasRy47xGS1_ziGgBNlejYwj-NJtIiwMRM83DPVs-y7BwS4dnc8jAI-QgyaMJGulZKtSHvcHL3SDZcfYEL95adcPPJyZL-KI9dZ6uBXOUMq6hpfjK35RTIP2-LK0ln-q6xK9d20t6RQ9pYUyP6jAp1wo2iY9RKMuPAb1LNZjgNuB7CeApiCTyfSKj82SFetTyP"/></div></div>
+<span class="category-label">Bisnis</span>
+<h3 class="serif text-lg font-bold mt-2">Ujian masuk saya ada pada kotak korek api</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Mavik Banner: fisikawan; ilmuwan. Mencari cara untuk menyadap kekuatan tersembunyi yang dimiliki semua manusia...</p>
+</article>
+<article class="group cursor-pointer" data-purpose="business-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHEGrk9RGBg539OydTsL2mRApM9cQAanAju77_aj4IlGfCexQdWkTyesbKIIfoG64uEh5hB0SFFK6lmYyNoNYXD4LLPfEpysKre1J0RG7RG-UgzrrgfKkH_f_J7o6mqIBfoMEMIo47_DLDiVDMXjzTAPLABSd7Od1zxzabBVTpefV1V6THo_MFIh2gP9mh36EQc7Y-yF0d31Lc9pAY55Ht0jx06lmwzo4TssxI5v_cQ8kF9RMCf6Hc2DPorjnbiNUWbqdtFIr2itE1"/></div></div>
+<div class="flex gap-2">
+<span class="category-label">Bisnis</span>
+<span class="category-label">Wawancara</span>
+</div>
+<h3 class="serif text-lg font-bold mt-2">Nama saya adalah Rhoda Morgenstern</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Layanan publik yang diberikan sangat baik, dengan komunikasi yang terjalin erat antar komunitas.</p>
+</article>
+<article class="group cursor-pointer" data-purpose="business-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD87xX31JwuFpXT1Uvj-t6CVTKWaFXBrYobKF_83-IbZs8jZMuVfjgBA-wahbsEZrtuaR2st1KVAgVkF0JanEBEzNO4oxas44eaV8hHZI_XXcpmYWHBnkC-x9Re18o1tMZctrXa8ZzA56BAS4HZQji5XBUCNE7R5-ulX2hgA5qOPJYZV4MRl2RAKuRnXuKWAeXjADhafT9Le_Pbe3FmA8HNGHChfkLnqs3GaUGKEe6Rv7yKj9_VX0nSzbqUY4e4i6ICZA2Y5Xu90PKt"/></div></div>
+<span class="category-label">Bisnis</span>
+<h3 class="serif text-lg font-bold mt-2">Malam ini pencapaian apa yang akan kita raih</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Begitu banyak hal yang harus diabaikan, namun kita harus tetap merasa peka. Ada kebutuhan untuk menghadapi kenyataan.</p>
+</article>
+</div>
+</section>
+<!-- END: SectionGrid Business -->
+<!-- BEGIN: SectionGrid Travel -->
+<section class="container-custom mt-20">
+<div class="flex justify-between items-end border-b border-gray-100 pb-2 mb-8">
+<h4 class="text-xs font-bold uppercase tracking-widest">Wisata</h4>
+<a class="text-[10px] font-bold uppercase text-[#ea580c] hover:underline" href="#">Lihat semua »</a>
+</div>
+<div class="grid grid-cols-4 gap-8">
+<article class="group cursor-pointer" data-purpose="travel-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_f8vSFNYi15VEtFh7qM4XMCgm3WScX3xm8E-oXsufe8YF8Z2tlWhud1Y8ZSjF5-KscWaY6Fu5HpZwl5MU76aw2IFUJeF1eKZvbd7cvsmLg8OsJH6lMmmRfqy37iJlOyY7ERMgnNAai4InunYcsCXAyqi6Wp3GFJqJdQsuBq799wUDUD9oIUoZyPnCPmkrB2nHOQ_GFAqqYwfSKUnjti5cDgrBXJFWGUFiKE_VrEOd4sd5FsBZTvyQ7LKto1X83mvejM9uxprxoAT"/></div></div>
+<span class="category-label">Wisata</span>
+<h3 class="serif text-lg font-bold mt-2 leading-tight">Hal pertama yang saya ingat saya sukai adalah makanan</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Mavik Banner: fisikawan; ilmuwan. Mencari cara untuk menyadap kekuatan tersembunyi...</p>
+</article>
+<article class="group cursor-pointer" data-purpose="travel-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpo8hQtAa8i8SSb6nkCwoDRiPL4kORhFWSNTjIiTNhkesw7B5_lhDLmTLPe02bYqc6pg4ngictPXlBRtqLUkpzd-gRRCnP0744FZVQhc5DUeESb3YI2klFzeQ6dl3WA4D1oRrZDnDDI7FuPBA0WCbj5wBH3QILWU7XTEwBzgDBqwQ79REWdMpixebYAuxgXoaZO6fFlAGk7KEz3hiwpnq_6g8ee3C0JyMNqoIW7oK1GKgubAvzywY3V6g0yPAioZX8bhQexgUXDP3u"/></div></div>
+<span class="category-label">Wisata</span>
+<h3 class="serif text-lg font-bold mt-2 leading-tight">Perjalanan Terakhir ke Pakistan</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Mavik Banner: fisikawan; ilmuwan. Mencari cara untuk menyadap kekuatan tersembunyi...</p>
+</article>
+<article class="group cursor-pointer" data-purpose="travel-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKlGKw-FkDkaiHrSWNZiCyCByh6fNEH1YCG4nwToTWXqmG7CdcRf2oyDPcV2FCJa5qA_1n1NRuuPKgz1FH6Suquc8nsBgDafczWQpUNt47erM2Jo5IZKpDS1U2aV52E0AsvOOffp_9qJLyintcrZ8xB7-zvQTqMX7rVdMZRWNJRxeU30oPqCmFBA_8U9rvjf29fc29Js22QFGle-wkJ8-xej-T8DXEPScCK5wajZsd4sS9aU-W3oNEBhj_bB65ZCnTRtxr9Ym4LqQl"/></div></div>
+<span class="category-label">Wisata</span>
+<h3 class="serif text-lg font-bold mt-2 leading-tight">Galeri Tulisan – Slider</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Tanggapan yang diberikan sangat positif. Masyarakat merasa puas dengan solusi yang ditawarkan.</p>
+</article>
+<article class="group cursor-pointer" data-purpose="travel-card" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-4"><div class="overflow-hidden rounded-lg"><img class="w-full h-40 object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdhy_g1D9OpvI1CH06rjoKxw5V0ma40SGLP_4nC8cNL5pyOf_3jihYh_YLNFdrAkeMgU_JrwgyLe6wRexbnyRKtI07yozoYOH7FGzD49g4S7Rm560uVyMjEG5IWp-Zt-gCgA3dXMPQO69Hvv3fwQ-mJMxKpnzEUw9shuD_gPLNdK36iiwQtUuSzz_2GQP19rETS_4xm_qT_N6AvSolO-SEDViP_5oPlXvQGn8jUT2sFwMZhEm5Kq7AYJJOfnxAUn1-QLq12oR5a-x_"/></div></div>
+<span class="category-label">Wisata</span>
+<h3 class="serif text-lg font-bold mt-2 leading-tight">Kami memberikan suara untuk hak-hak kami</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase">8 Januari 2025</p>
+<p class="text-xs text-gray-500 mt-3 leading-relaxed">Begitu banyak hal yang harus diabaikan, namun kita harus tetap merasa peka. Ada kebutuhan untuk menghadapi kenyataan.</p>
+</article>
+</div>
+</section>
+<!-- END: SectionGrid Travel -->
+<!-- BEGIN: SectionPolitics -->
+<section class="container-custom mt-20">
+<div class="flex justify-between items-end border-b border-gray-100 pb-2 mb-8">
+<h4 class="text-xs font-bold uppercase tracking-widest">Politik</h4>
+<a class="text-[10px] font-bold uppercase text-[#ea580c] hover:underline" href="#">Lihat semua »</a>
+</div>
+<div class="grid grid-cols-12 gap-8">
+<div class="col-span-8">
+<article class="group cursor-pointer" data-purpose="politics-large" onclick="window.location='article.html';">
+<div class="overflow-hidden rounded-lg mb-6"><div class="overflow-hidden rounded-lg"><img class="w-full h-[450px] object-cover transition-transform duration-500 will-change-transform group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkAhn8-dnSS-28Nhn74eqXifzP9bqLJTIlttABdmWnMIZu9UR8XlF-dqJ8c1BXBmXS_eGZu39QjT4hSSYDUbEwtDhgf5Txui4hTk4azmXtB424cstSxRKW1flLoaBrMvZitiIPX4EKT5rZsPG_1JEGPYIaUps_OWdUI3tFyW6nKQVAf03pH61U_GSG6jpqLc1_lx9oEyQ6cx90xGIZljq0ernyha1KwvNizEck7xDoDLN6S_U5q_noWIXwO-iFUAtwxrACx9bbpj_m"/></div></div>
+<div class="flex gap-2">
+<span class="category-label">Buku</span>
+<span class="category-label">Politik</span>
+</div>
+<h2 class="serif text-3xl font-bold mt-4 mb-4">Saya memutuskan untuk pindah rumah</h2>
+<p class="text-sm text-gray-600 leading-relaxed mb-6">Karya yang dihasilkan sangat luar biasa. Tidak ada keraguan bagi masyarakat umum untuk mengapresiasinya secara bermartabat. Selalu ada kesempatan untuk memberikan yang terbaik bagi kita semua.</p>
+<div class="flex items-center space-x-4 border-t border-gray-100 pt-4">
+<div class="flex items-center space-x-3">
+<img alt="Lucas" class="w-8 h-8 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ_TczjjM2Ar1wNgoCkOoe6fexf8k6zich-3y7Mv68k61d7NLCc3GailNnsVUxH3v9vSFA8foRpaziy6QEq4EnNPEdwb2o7cBGEIfqFvsw2e_paVif2DeYVeucKIkpeBI2Eq-NTsbYb17eAhPjdtz8NArFZMOlYzklGEVaSxaJsHUCT51LpuRXNAenN6ThnSqBgLKpiQNmwn6ulaZzCK30wW6CFKib2V55EmBggDrRzjvqI8_1aAIk22KTZA_rFiPHwlOsMMWE_8ya"/>
+<span class="text-[10px] text-gray-400 font-bold">8 Januari 2025</span>
+<span class="text-[10px] text-gray-400 font-bold uppercase">Oleh Lucas</span>
+</div>
+</div>
+</article>
+</div>
+<div class="col-span-4 space-y-8">
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2">
+<div class="overflow-hidden rounded-lg"><img class="w-full h-32 object-cover mb-3 transition-transform duration-500 group-hover:scale-105 will-change-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZz1lQtsuH7bTh0ALIS5L9QOupQ8vNswLg_5BSczsX2-WJBCbWing7mgd7rhqwny7i8K6jtR8bNEI-FClME_DgD8lkfM8RuyAlK-vPOKl04ww-pYXX0zv51niUNzYSmq14izQLzIHk_pKCIEAEadgWbj_Sbeo5yxhCgutffbYnV9o3spnNuelB_QTDZB8CI2Gz066-B0RmDdHXG2xlwLNBfh_qwZhNhOh8sB024cmm61H9jTJPqTZYxrefNVcQrn7ZCrOuhvhvCZT0"/></div>
+<span class="category-label">Politik</span>
+<h5 class="serif text-sm font-bold mt-1">New York, ini adalah kesempatan terakhirmu</h5>
+</div>
+<div class="col-span-2 border-t border-gray-100 pt-4">
+<div class="overflow-hidden rounded-lg"><img class="w-full h-32 object-cover mb-3 transition-transform duration-500 group-hover:scale-105 will-change-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-MXyrXUYtcY-ZgCj8ccZuLXB4W3VDNMbSqZR6GgQ3vi0iOEIgZGHCd4H7Y93DAfAL-hBwc7idVYgEMLobaHMMITNgXpl7nT55DTByJMYuNHwlZXkfYAIsF2NI6Zor6NT9dfdNgpX_frh-jjbdWeBuT0KFGZoGR5XSGkadsY-mI2tlANNEU3ohqGyZNpv92SCtI-SwEhMZrtMmp3OCLnbDMsjERONJVrKGm5cxm4WR5jOvTijFxiGGGpgM0-UdS43bmTi_CvInP5G9"/></div>
+<span class="category-label">Politik</span>
+<h5 class="serif text-sm font-bold mt-1">Membantu Melindungi Cekungan Okavango</h5>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: SectionPolitics -->
+<!-- BEGIN: Newsletter -->
+<section class="bg-[#f3f4f6] py-20 mt-20">
+<div class="container-custom text-center">
+<h2 class="serif text-4xl font-bold mb-10 uppercase tracking-widest">BULETIN</h2>
+<form class="flex max-w-2xl mx-auto gap-4">
+<input class="flex-1 px-4 py-4 border-none text-sm" placeholder="Nama Anda" type="text"/>
+<input class="flex-1 px-4 py-4 border-none text-sm" placeholder="Alamat email Anda" type="email"/>
+<button class="bg-[#ea580c] text-white px-10 py-4 text-xs font-bold uppercase tracking-wider hover:bg-[#c2410c] transition-colors" type="submit">DAFTAR</button>
+</form>
+</div>
+</section>
+<!-- END: Newsletter -->
+<!-- BEGIN: MainContentWithSidebar -->
+<section class="container-custom mt-20 pb-20">
+<div class="grid grid-cols-12 gap-12">
+<!-- Latest Feed (Left) -->
+<div class="col-span-8">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-black pb-2 mb-8">Terbaru</h4>
+<div class="space-y-12">
+<article class="flex gap-8 group cursor-pointer" onclick="window.location='article.html';">
+<div class="flex-1">
+<span class="category-label">Wawancara</span>
+<h3 class="serif text-2xl font-bold mt-2 leading-tight">Inilah rangkuman tahun 2024 saya</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase font-bold mb-4">8 Januari 2025</p>
+<p class="text-xs text-gray-500 leading-relaxed">Mavik Banner: fisikawan; ilmuwan. Mencari cara untuk menyadap kekuatan tersembunyi yang dimiliki semua manusia...</p>
+</div>
+<div class="overflow-hidden rounded-lg"><img class="w-64 h-40 object-cover transition-transform duration-500 group-hover:scale-105 will-change-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl0ZM00ECfR0t5LUxUhzHFITkLISJTNgQmcwVR5mn0vjMhkZWZg8y6AMPUSHCtmphuuY7UQ2z3qb3K4KoLsBbBoJNdzUJStRE9pt9Q6K5qoBpNXbYysig56LLPwaUk_KFOjOPU6WhkYfqMsT3Dk03bAWu_ZfyMKa-zv0lvpQ9AxpztBEWEzi9-zC3RAvQv_Abgp2_sOHYir77PAfcdg6A01cyBC4vXLn76vtRDaiujf9j-44ztqhxwP-X2wh7Bzk0_jV1YFVkiJ2zG"/></div>
+</article>
+<article class="flex gap-8 group cursor-pointer" onclick="window.location='article.html';">
+<div class="flex-1">
+<span class="category-label">Wawancara</span>
+<h3 class="serif text-2xl font-bold mt-2 leading-tight">Rebel Wilson menikahi Ramona Agruma di Sydney – dan kali ini sungguhan</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase font-bold mb-4">8 Januari 2025</p>
+<p class="text-xs text-gray-500 leading-relaxed">Mavik Banner: fisikawan; ilmuwan. Mencari cara untuk menyadap kekuatan tersembunyi yang dimiliki semua manusia...</p>
+</div>
+<div class="overflow-hidden rounded-lg"><img class="w-64 h-40 object-cover transition-transform duration-500 group-hover:scale-105 will-change-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_NJmmAEwfIwjBm3ffeUQuszR6UgK8jq3CpYmQIjoSy2aOGNo1bNKPTV2bGcXChVvB5PHHWzHqzxbht9INclIk6HtRtqzj42oH75ObPdfzlZ0lE08cgoO38CWpQdtUziAB2cT7gXEjHzuP8xz5lR_jdxQh5pZR1H9ZT4i5p27iEawHAWQ9fG2uyTbNnaEAr0LfTjg3XEaP2XdzQGzqJ33Ub4ZT06MqYeIS33c-NM0bZEFz2pHoaPtPNbekzjtxgcsMU4NUa5a45khM"/></div>
+</article>
+<article class="flex gap-8 group cursor-pointer" onclick="window.location='article.html';">
+<div class="flex-1">
+<span class="category-label">Opini</span>
+<h3 class="serif text-2xl font-bold mt-2 leading-tight">Saat Anda mengatakan yang sebenarnya kepada mereka</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase font-bold mb-4">8 Januari 2025</p>
+<p class="text-xs text-gray-500 leading-relaxed">Ei mei scripta intellegat. Verear voluptaria eam at, consul putent eu vel. Pro saepe maluisset ne, audire maiorum forensibus eos et.</p>
+</div>
+<div class="overflow-hidden rounded-lg"><img class="w-64 h-40 object-cover transition-transform duration-500 group-hover:scale-105 will-change-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPEuugrMBFR43MmALMd5SJkdDOe-96CtRpNzNxxZ0C-sjPKtQChRCXFh_ZMewXgHPLXhZ5yNG2cKwOzMs7jv5QC1Z-NGfZwpVffQvrcxSqiaLz3r9vICfvajW4zGtCk7OP7LWkM45vkCkN8c9u49ljuRftaq1FVGI91aK6wk_t1y0kIQjL3vWZ8ACbCIhMfrM9cfUHnDOHSkMT2CpdoqgNnQscFLBFWke6smA7696uBIK3Uy9gI4snT1RB1qgJJU5FT9O3AvDa-lhP"/></div>
+</article>
+<article class="flex gap-8 group cursor-pointer" onclick="window.location='article.html';">
+<div class="flex-1">
+<span class="category-label">Buku</span>
+<h3 class="serif text-2xl font-bold mt-2 leading-tight">Contoh Tulisan Hero-Half</h3>
+<p class="text-[10px] text-gray-400 mt-1 uppercase font-bold mb-4">8 Januari 2025</p>
+<p class="text-xs text-gray-500 leading-relaxed">Begitu banyak hal yang harus diabaikan, namun kita harus tetap merasa peka. Ada kebutuhan untuk menghadapi kenyataan dengan bijak.</p>
+</div>
+<div class="overflow-hidden rounded-lg"><img class="w-64 h-40 object-cover transition-transform duration-500 group-hover:scale-105 will-change-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCa0yjhm-6fmoVwzKNL4lz9HeeYDAFHn-xGjQvxgd20AHmabt26CeBCh3OOYpH2slyQl_UID7cg2lRBqh09u5BNWZpoFreqFwZ5qa-FmAEl9TKyJPOqrAy24K5liYUDoFJHzMJIGzyxqkQ-OARMYtcnuOb57jhiF1NW4iMd19ul-vfzSXKVOXgWZnADwzUJ_XFbkmpUjriM7_mNsGTiJt5IVJReUgo0X4fGjKcQX2dTEhRbQOL2BjVA5-PeCKOzh5rqnihepl9xYJr0"/></div>
+</article>
+<div class="text-center pt-8">
+<button class="bg-[#111827] text-white px-12 py-3 text-xs font-bold uppercase tracking-widest hover:bg-black transition-colors">LIHAT SEMUA »</button>
+</div>
+</div>
+</div>
+<!-- Sidebar (Right) -->
+<aside class="col-span-4 space-y-12">
+<!-- Authors -->
+<section data-purpose="sidebar-authors">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-gray-100 pb-2 mb-6">Penulis</h4>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<img class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5EfCTS-IoPXpXFFchDfZa74UG5cS66SOVHa-DwI5sa9_j8GAH5efk2KnfeDgOjR_BJtYQ67nyf3OCWl_lPs94J2dkr1ICvKv6kuiXWXqWjTAyE3HIp32gtRfqJN4LrEidhyS-J8By3NapuiT5HYJpouWUpFAafheka9iaXLtK-z1bdlldINSJ__ernyvY27YXLsCFutLQt0mU2-RQRwpdolmHMBGSQQpa6ibIZyd5jy-1l7SPr2oU71OTBZ3wV0Na-b8NNTgKYSWP"/>
+<div>
+<p class="text-xs font-bold serif">Isabella</p>
+<p class="text-[10px] text-gray-500">When you tell them the truth</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<img class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWAS_pm1e8c-I7E2EE5u_pkfR2xoEefgIcFpwhsfDR6DSkSDwSOf0mqbM9jG5uJODcn4gUieS1gnBkuKW7ayVheB9P_yEpdaBX6K0DJuaiekU9eb4Of5ylh8xk6VfzLBXG-DExKOFjV6AlonJdV8FQnPE1ZtQ_DpmGMN-__WjKTgPDaifH06HTa4GojAFJJHOe_Mk8H08KbETrvliEruG0XCpFfmdEuUEvf0HSCh127PdxcZ0zqgYDDwdcdeM7X5aSgAumvfB_tfxo"/>
+<div>
+<p class="text-xs font-bold serif">Lucas</p>
+<p class="text-[10px] text-gray-500">This is my 2024 unwrapped</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<img class="w-10 h-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRqUEp4JiBieqW7rlhGIOOJJ2puF18y-DHodSAFV0QeEE42ZQTulOsEof6t0XyebVNjKMii7DqS8AWQJGOA1HY5qnw-TjfCdMypV8jwBBq4PkCPAd4WxJKtPWAKKBeFOwCZNWUZPVtmOn1k2FgZaa57Jsec-ooh3TVLKQW40Zbt9Kdl3I1x7nW3lTIKj0DLHfOaYAdtIiQHyp9F_PCPCYtkYcpoMORGxmmmFdGH_jtkDawVRuKUX0qhWM0Yd94ABnrpnttLhx0HnAW"/>
+<div>
+<p class="text-xs font-bold serif">Neil</p>
+<p class="text-[10px] text-gray-500">Hero-Half Post Example</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us -->
+<section data-purpose="sidebar-about">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-gray-100 pb-2 mb-6">Tentang Kami</h4>
+<img alt="Tentang" class="w-full h-auto mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsV0L3bpyR9F72qhgSzBpbfz3jVE8mR9dFLA4GFRqw9d_a1q1aevqPnkG4OrZU9sWWt-5XoX6SmgIl5j8Vc9QUbEX4kecsfSmQWkXCi90AbqXIlG98uzzWA7IAdBZYJ-66KSCBtUEcQ8Mbi9HE9-K9h-8Tg24gn_8Hre-pJOSG-Xp6BygTkzY5LZNaPtyDcE_mpl1I2WRy_KaIzs3oi0ykfcO_ujUWhudCPs2y_zZp6d4jJTa1yyIV-g6Xq40bnIiZ89XRor9icBtC"/>
+</section>
+<!-- Categories -->
+<section data-purpose="sidebar-categories">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-gray-100 pb-2 mb-6">Kategori</h4>
+<ul class="space-y-2 text-xs font-medium">
+<li class="flex justify-between border-b border-gray-50 pb-2"><span>Buku</span> <span class="text-gray-400">(3)</span></li>
+<li class="flex justify-between border-b border-gray-50 pb-2"><span>Bisnis</span> <span class="text-gray-400">(8)</span></li>
+<li class="flex justify-between border-b border-gray-50 pb-2"><span>Wawancara</span> <span class="text-gray-400">(4)</span></li>
+<li class="flex justify-between border-b border-gray-50 pb-2"><span>Opini</span> <span class="text-gray-400">(6)</span></li>
+<li class="flex justify-between border-b border-gray-50 pb-2"><span>Politik</span> <span class="text-gray-400">(5)</span></li>
+<li class="flex justify-between border-b border-gray-50 pb-2"><span>Wisata</span> <span class="text-gray-400">(7)</span></li>
+</ul>
+</section>
+<!-- Search -->
+<section data-purpose="sidebar-search">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-gray-100 pb-2 mb-6">Cari</h4>
+<div class="flex">
+<input class="flex-1 border-gray-200 text-xs px-3 py-2 focus:ring-[#ea580c] focus:border-[#ea580c]" type="text"/>
+<button class="bg-black text-white px-4 py-2 text-[10px] font-bold uppercase">Cari</button>
+</div>
+</section>
+<!-- Recent Posts -->
+<section data-purpose="sidebar-recent">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-gray-100 pb-2 mb-6">Tulisan Terbaru</h4>
+<ul class="space-y-3 text-xs leading-snug">
+<li><a class="hover:text-[#ea580c] transition-colors" href="#">Inilah rangkuman tahun 2024 saya</a></li>
+<li><a class="hover:text-[#ea580c] transition-colors" href="#">Rebel Wilson menikahi Ramona Agruma di Sydney – dan kali ini sungguhan</a></li>
+<li><a class="hover:text-[#ea580c] transition-colors" href="#">Saat Anda mengatakan yang sebenarnya kepada mereka</a></li>
+<li><a class="hover:text-[#ea580c] transition-colors" href="#">Hero-Half Post Example</a></li>
+<li><a class="hover:text-[#ea580c] transition-colors" href="#">Selamat Datang di Tema WordPress Terbaik Untuk Penulis</a></li>
+</ul>
+</section>
+</aside>
+</div>
+</section>
+<!-- END: MainContentWithSidebar -->
+<!-- BEGIN: MainFooter -->
+<footer class="border-t border-gray-100 pt-20 pb-16">
+<div class="container-custom text-center">
+<div class="mb-12">
+<button class="bg-[#111827] text-white px-6 py-3 text-[10px] font-bold uppercase tracking-widest hover:bg-black transition-colors">BERLANGGANAN</button>
+</div>
+<div class="flex justify-center space-x-8 text-[10px] font-bold uppercase tracking-widest mb-16">
+<a class="hover:text-[#ea580c]" href="#">Tentang</a>
+<a class="hover:text-[#ea580c]" href="#">Privasi</a>
+<a class="hover:text-[#ea580c]" href="#">Bantuan</a>
+<a class="hover:text-[#ea580c]" href="#">Ketentuan</a>
+<a class="hover:text-[#ea580c]" href="#">Kontak</a>
+</div>
+<div class="text-gray-400 text-[10px] mb-16">Diberdayakan oleh tema <a class="text-[#ea580c]" href="#">The Fox</a>.</div>
+<div class="border-t border-gray-100 pt-16">
+<h2 class="text-6xl font-bold tracking-tighter mb-8 serif">HARVEN</h2>
+<p class="text-[10px] text-gray-500 mb-10 uppercase tracking-widest">©2026 - ALL RIGHTS RESERVED. PUBLISHED WITH WORDPRESS &amp; THE FOX THEME</p>
+<div class="flex justify-center space-x-6 text-sm">
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">f</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">x</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">o</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">w</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">in</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">e</a>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+</body></html>

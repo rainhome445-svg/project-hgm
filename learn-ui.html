@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Harven - Learn UI Design</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ea580c",
+                        "background-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"],
+                        "serif": ["Libre Baskerville", "serif"],
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4, h5, .serif { font-family: 'Libre Baskerville', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .category-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ea580c;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 antialiased font-sans">
+<!-- Header / Navbar -->
+<header class="sticky top-0 z-50 w-full bg-white border-b border-gray-100">
+<div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center">
+<h1 class="text-3xl font-bold tracking-tighter serif uppercase">HARVEN</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-xs font-bold uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="index.html">Beranda</a>
+<a class="hover:text-primary transition-colors" href="news.html">News</a>
+<a class="text-primary" href="learn.html">Learn</a>
+<a class="hover:text-primary transition-colors" href="people.html">People</a>
+<a class="hover:text-primary transition-colors" href="about.html">About Me</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-gray-50 rounded-full">
+<span class="material-symbols-outlined text-gray-900">search</span>
+</button>
+<div class="h-10 w-10 rounded-full border border-gray-100 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Foto profil pengguna pria tersenyum" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeHfQ9428nib-irp9oo2quyr5S8TiNNrRSDzCuEdrEbN-D0igepjiYL5VKowqBnRwOletzOK1WcQJqYDxp_n8dcdWNzMF96UObPUEcyNnasTK3-3_nxREizNLQTOI_hrLGohBQT-eQBcAIxrjnP3GabnC6THsaelJ8r4gu22sTjQBgTiRNgu6fYpfK_me_KYfgPhZeXyrsDgRY2t90-XGBqsP4at5sBuZ44zY2APgfQ0Mk9Yswo7alvicAaZiulOBl8NjMoj-58OYg"/>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto px-6 py-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Column: Main Content -->
+<div class="lg:col-span-8 flex flex-col gap-8">
+<!-- Video Player -->
+<div class="relative w-full aspect-video bg-black rounded overflow-hidden shadow-xl group border border-gray-100">
+<img class="w-full h-full object-cover opacity-60" data-alt="Tampilan antarmuka desain aplikasi mobile modern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuJZsfhZQaFLCeL5y1ulO2lT0c9DK-yNDJ0wQ59qcupU039Ta_tXTzpOy8C6sNYXn5UxOCGOOfGeToT46ldSb4Ya9sjGCQg5ZzdI7F6E_3-cJHKCMZiOzmZAGkfTM1RLUZVJhQfItBKocl25WbaIk4FBUd0OaZ7462W29tud51S7s01ZEenv7DQ0bCjaKtstvZb3xbteilyx4H-ltEM1UJZHRlCS1q9F400pR4b0SVoYKVpcI9YuK20IjhXLO_btj-eE4oLnaPT982"/>
+<!-- Player Controls Overlay -->
+<div class="absolute inset-0 flex items-center justify-center">
+<button class="size-20 bg-primary text-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-5xl">play_arrow</span>
+</button>
+</div>
+<div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+<div class="flex flex-col gap-3">
+<div class="h-1.5 w-full bg-white/20 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-1/3"></div>
+</div>
+<div class="flex items-center justify-between text-white text-[10px] font-bold uppercase tracking-wider">
+<span>12:45 / 45:00</span>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-base">settings</span>
+<span class="material-symbols-outlined text-base">fullscreen</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Lesson Info -->
+<div class="flex flex-col gap-6">
+<div class="flex flex-wrap items-start justify-between gap-4">
+<div class="flex flex-col gap-3">
+<h2 class="serif text-3xl font-bold leading-tight text-gray-900">Dasar-Dasar Desain Antarmuka: Tipografi &amp; Hirarki Visual</h2>
+<div class="flex items-center gap-4">
+<span class="category-label">Desain UI/UX</span>
+<span class="text-gray-400 text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">visibility</span> 12,405 tayangan
+                                </span>
+</div>
+</div>
+<div class="flex gap-2">
+<button class="flex items-center gap-2 px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded text-[10px] font-bold uppercase tracking-wider transition-colors">
+<span class="material-symbols-outlined text-base">thumb_up</span> 1.2k
+                            </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded text-[10px] font-bold uppercase tracking-wider transition-colors">
+<span class="material-symbols-outlined text-base">share</span> Bagikan
+                            </button>
+<button class="flex items-center gap-2 px-4 py-2 bg-gray-50 hover:bg-gray-100 rounded text-[10px] font-bold uppercase tracking-wider transition-colors">
+<span class="material-symbols-outlined text-base">bookmark</span> Simpan
+                            </button>
+</div>
+</div>
+<hr class="border-gray-100"/>
+<!-- Instructor -->
+<div class="flex items-center justify-between py-2">
+<div class="flex items-center gap-4">
+<div class="size-14 rounded-full overflow-hidden border border-gray-100">
+<img class="w-full h-full object-cover" data-alt="Foto potret instruktur pria profesional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB52XMogTt2qJeGKRPauPznh6Go_z1EdLMxYVcRoqi6UMPWrhrWiejCHsMKojEvEXF5ceXkMc-k_eYKIbeJg1vnIMhoPuW1XGwIm1sp6z5xugL-l6yZNPQGZUndac4FC5t-S-6CABc0zGSCAZf2gTbT4j5f67ljuK5gpSPuLscWH6FfHU4_pjYroSzDXm1jb8rtS-egQ_EkLGg2mpT1SiZyeQCDna5YIj6n0DywXuYO2TZIklL4DePZ1cnbqQRSqlqYbtMKuncO3ulA"/>
+</div>
+<div>
+<h3 class="serif text-lg font-bold text-gray-900">Harven Saputra</h3>
+<p class="text-[10px] text-gray-400 font-bold uppercase">@harvensaputra • Instruktur Senior Desain</p>
+</div>
+</div>
+<button class="px-8 py-3 bg-primary text-white text-xs font-bold uppercase tracking-widest hover:bg-[#c2410c] transition-colors shadow-sm">
+                            Ikuti
+                        </button>
+</div>
+<!-- Description -->
+<div class="bg-gray-50 p-8 rounded border border-gray-100">
+<p class="text-sm text-gray-600 leading-relaxed">
+                            Dalam sesi ini, kita akan mempelajari bagaimana tipografi dan hirarki visual membentuk pengalaman pengguna. Kita akan membahas pemilihan font, skala tipe, dan cara mengarahkan pandangan pengguna melalui kontras dan penempatan yang strategis. Materi ini sangat penting bagi pemula yang ingin membangun fondasi desain yang kuat.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Sidebar -->
+<div class="lg:col-span-4 flex flex-col gap-10">
+<!-- Lesson Playlist -->
+<div class="bg-white border border-gray-100 overflow-hidden shadow-sm">
+<div class="p-6 border-b border-gray-100 flex items-center justify-between">
+<h4 class="text-xs font-bold uppercase tracking-widest text-gray-900">Daftar Pelajaran</h4>
+<span class="category-label bg-orange-50 px-2 py-1">12 Sesi</span>
+</div>
+<div class="flex flex-col">
+<!-- Episode 1 (Current) -->
+<div class="p-4 flex items-center gap-4 bg-orange-50/50 border-l-2 border-primary">
+<div class="size-10 rounded-full bg-primary text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">play_arrow</span>
+</div>
+<div class="flex-1">
+<h5 class="serif text-sm font-bold text-gray-900 leading-tight">1. Pengenalan Antarmuka</h5>
+<p class="text-[9px] text-primary font-bold uppercase mt-1">Sedang Diputar • 12 menit</p>
+</div>
+</div>
+<!-- Episode 2 -->
+<div class="p-4 flex items-center gap-4 hover:bg-gray-50 cursor-pointer transition-colors border-l-2 border-transparent">
+<div class="size-10 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">lock</span>
+</div>
+<div class="flex-1">
+<h5 class="serif text-sm font-bold text-gray-700 leading-tight">2. Teori Warna &amp; Kontras</h5>
+<p class="text-[9px] text-gray-400 uppercase font-bold mt-1">18 menit</p>
+</div>
+</div>
+<!-- Episode 3 -->
+<div class="p-4 flex items-center gap-4 hover:bg-gray-50 cursor-pointer transition-colors border-l-2 border-transparent">
+<div class="size-10 rounded-full bg-gray-100 text-gray-400 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-lg">lock</span>
+</div>
+<div class="flex-1">
+<h5 class="serif text-sm font-bold text-gray-700 leading-tight">3. Grid &amp; Layouting Modern</h5>
+<p class="text-[9px] text-gray-400 uppercase font-bold mt-1">24 menit</p>
+</div>
+</div>
+</div>
+<div class="p-5 bg-gray-50 text-center border-t border-gray-100">
+<button class="text-[10px] font-bold uppercase tracking-widest text-primary hover:underline">Lihat Semua Kurikulum</button>
+</div>
+</div>
+<!-- Resources -->
+<div class="flex flex-col gap-6">
+<h4 class="text-xs font-bold uppercase tracking-widest border-b border-black pb-2">Materi Pendukung</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="p-4 bg-white border border-gray-100 rounded flex flex-col items-center text-center gap-3 hover:shadow-md transition-shadow cursor-pointer">
+<div class="size-12 bg-orange-50 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl">picture_as_pdf</span>
+</div>
+<div>
+<h5 class="serif text-[10px] font-bold text-gray-900">Cheat Sheet UI</h5>
+<p class="text-[9px] text-gray-400 mt-1 uppercase font-bold">PDF • 2.4MB</p>
+</div>
+</div>
+<div class="p-4 bg-white border border-gray-100 rounded flex flex-col items-center text-center gap-3 hover:shadow-md transition-shadow cursor-pointer">
+<div class="size-12 bg-gray-50 rounded flex items-center justify-center">
+<span class="material-symbols-outlined text-gray-900 text-3xl">folder_zip</span>
+</div>
+<div>
+<h5 class="serif text-[10px] font-bold text-gray-900">Asset Latihan</h5>
+<p class="text-[9px] text-gray-400 mt-1 uppercase font-bold">ZIP • 45MB</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Card -->
+<div class="relative overflow-hidden bg-gray-900 rounded p-8 text-white shadow-xl">
+<div class="relative z-10 text-center">
+<h4 class="serif text-xl font-bold mb-3 uppercase tracking-widest">Ingin Sertifikat?</h4>
+<p class="text-xs text-gray-400 mb-6 leading-relaxed">Selesaikan semua kuis dan tugas untuk mendapatkan sertifikat resmi.</p>
+<button class="w-full py-3 bg-primary text-white font-bold uppercase tracking-widest text-xs hover:bg-[#c2410c] transition-colors">
+                            Berlangganan
+                        </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer: Sync from SCREEN_25 -->
+<footer class="border-t border-gray-100 pt-16 pb-12">
+<div class="max-w-[1200px] mx-auto px-6 text-center">
+<div class="mb-8">
+<button class="bg-gray-900 text-white px-4 py-2 text-[10px] font-bold uppercase tracking-widest hover:bg-black transition-colors">Berlangganan</button>
+</div>
+<div class="flex justify-center space-x-6 text-[10px] font-bold uppercase tracking-widest mb-12">
+<a class="hover:text-[#ea580c]" href="#">Tentang</a>
+<a class="hover:text-[#ea580c]" href="#">Privasi</a>
+<a class="hover:text-[#ea580c]" href="#">Bantuan</a>
+<a class="hover:text-[#ea580c]" href="#">Ketentuan</a>
+<a class="hover:text-[#ea580c]" href="#">Kontak</a>
+</div>
+<div class="text-gray-400 text-[10px] mb-12">Diberdayakan oleh tema <a class="text-[#ea580c]" href="#">The Fox</a>.</div>
+<div class="border-t border-gray-100 pt-12">
+<h2 class="text-4xl font-bold tracking-tighter mb-6 serif uppercase">HARVEN</h2>
+<p class="text-[10px] text-gray-500 mb-8 uppercase tracking-widest">©2026 - All rights reserved. Published with WordPress &amp; The Fox theme</p>
+<div class="flex justify-center space-x-4 text-sm">
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">f</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">x</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">o</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">w</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">in</a>
+<a class="text-gray-900 hover:text-[#ea580c]" href="#">e</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
