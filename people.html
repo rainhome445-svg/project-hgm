@@ -26,6 +26,12 @@
         }
     </script>
 <style>
+
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
         body { font-family: 'Inter', sans-serif; }
         h1, h2, h3, h4, .serif { font-family: 'Libre Baskerville', serif; }
         .category-label {
@@ -39,18 +45,24 @@
 </head>
 <body class="bg-white text-gray-900 antialiased transition-colors duration-200">
 <!-- Header Component (Synced with SCREEN_25) -->
-<header class="border-b border-gray-100 py-8">
-<div class="max-w-[1200px] mx-auto px-4 text-center">
-<h1 class="text-5xl font-bold tracking-tighter mb-8 serif">HARVEN</h1>
-<nav class="flex justify-center items-center space-x-8 text-xs font-bold uppercase tracking-widest border-t border-b border-gray-100 py-4">
-<a class="hover:text-[#ea580c] transition-colors" href="index.html">Beranda</a>
-<a class="hover:text-[#ea580c] transition-colors" href="news.html">News</a>
-<a class="hover:text-[#ea580c] transition-colors" href="learn.html">Learn</a>
-<a class="hover:text-[#ea580c] transition-colors" href="people.html">People</a>
-<a class="hover:text-[#ea580c] transition-colors" href="about.html">About Me</a>
-</nav>
-</div>
+<!-- BEGIN: MainHeader -->
+<header class="border-b border-gray-100 py-4 sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-300">
+    <div class="container-custom flex items-center justify-between">
+        <a href="index.html" class="text-3xl font-bold tracking-tighter serif text-gray-900">HARVEN</a>
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-widest">
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="index.html">Beranda</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="news.html">News</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="learn.html">Learn</a>
+            <a class="text-[#ea580c] font-bold  transition-colors" href="people.html">People</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="about.html">About Me</a>
+        </nav>
+        <!-- Mobile Menu Placeholder -->
+        <button class="md:hidden text-gray-900">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
 </header>
+<!-- END: MainHeader -->
 <!-- Hero Section -->
 <section class="relative w-full h-[500px] overflow-hidden">
 <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCnzyhGP1CmEqRzd9_7WM4u3b8gUZhU8ZdcmCDqWEW7bssYGDqC2b7J3nKd7EFAe3pvoiXfPpxsV7VOpWUKLEzbH8WZFipw2WBfVr3gfv1JOfYd9nk51WXMn5GKahWVRmdhVZvK2lK-CkpMsItZv5bFxcAnmTGHQeUe7SUSRCySF9AAIcmA496pax-yCMskUpA9RvGbeaSOVp4jdXrda5Stb4uiC_KTnqQsT6couah1DqB551kNaCMzIn2Dum7zmg8cR_j63Lr_tC9w');">
