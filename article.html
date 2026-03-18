@@ -18,6 +18,12 @@
         }
     </script>
     <style>
+
+        .container-custom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #111827; }
         h1, h2, h3, h4, .serif { font-family: 'Libre Baskerville', serif; }
         
@@ -37,19 +43,25 @@
 <body class="antialiased selection:bg-primary selection:text-white">
 
     <!-- Minimal Header -->
-    <header class="border-b border-gray-100 bg-white sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-300">
-        <div class="max-w-[800px] mx-auto px-4 lg:px-0 flex items-center justify-between h-16">
-            <a href="index.html" class="text-xl font-bold tracking-tighter serif uppercase hover:text-primary transition-colors">HARVEN</a>
-            <div class="flex items-center gap-4">
-                <button class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-primary transition-colors duration-300">
-                    <span class="material-symbols-outlined text-sm">bookmark</span> Simpan
-                </button>
-                <button class="flex items-center gap-1 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-primary transition-colors duration-300">
-                    <span class="material-symbols-outlined text-sm">share</span> Bagikan
-                </button>
-            </div>
-        </div>
-    </header>
+    <!-- BEGIN: MainHeader -->
+<header class="border-b border-gray-100 py-4 sticky top-0 z-50 bg-white/80 backdrop-blur-md transition-all duration-300">
+    <div class="container-custom flex items-center justify-between">
+        <a href="index.html" class="text-3xl font-bold tracking-tighter serif text-gray-900">HARVEN</a>
+        <nav class="hidden md:flex items-center space-x-8 text-xs font-bold uppercase tracking-widest">
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="index.html">Beranda</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="news.html">News</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="learn.html">Learn</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="people.html">People</a>
+            <a class="text-gray-900 hover:text-[#ea580c] transition-colors" href="about.html">About Me</a>
+        </nav>
+        <!-- Mobile Menu Placeholder -->
+        <button class="md:hidden text-gray-900">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</header>
+<!-- END: MainHeader -->
+
 
     <main class="max-w-[800px] mx-auto px-4 lg:px-0 py-12">
         <!-- Article Header Metadata -->
