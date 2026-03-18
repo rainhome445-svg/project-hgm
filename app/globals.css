@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #ffffff;
+    color: #111827;
+  }
+  h1, h2, h3, h4, h5, h6, .serif, .font-display {
+    font-family: var(--font-libre-baskerville), serif;
+  }
+}
+
+@layer components {
+  .container-custom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  .drop-cap::first-letter {
+    float: left;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    padding-top: 0.25rem;
+    padding-right: 0.75rem;
+    font-family: var(--font-libre-baskerville), serif;
+    font-weight: 700;
+    color: #ea580c;
+  }
+  .category-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ea580c;
+  }
+}
